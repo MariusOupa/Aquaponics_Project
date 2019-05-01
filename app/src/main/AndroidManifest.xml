@@ -9,6 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".HistoryTableActivity"
+            android:label="@string/title_activity_history_table"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".HistoryGraphActivity"
+            android:label="@string/title_activity_history_graph"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistoryPageActivity"
+            android:label="@string/title_activity_history_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConnectionActivity"
+            android:label="@string/title_activity_connection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WeatherActivity"
+            android:label="@string/title_activity_weather"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
