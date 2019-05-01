@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HistoryGraphActivity"
+    tools:showIn="@layout/app_bar_history_graph">
+
+    <TextView
+        android:id="@+id/lblHistoryGraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="History Graph" />
+
+    <Spinner
+        android:id="@+id/lblHistoryDropdown"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp"
+        tools:text="Date Selected" />
+
+    <LinearLayout
+        android:id="@+id/layoutHistoryGraph"
+        android:layout_width="395dp"
+        android:layout_height="565dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="102dp"></LinearLayout>
+
+    <Spinner
+        android:id="@+id/lblHistoryDropdown2"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="67dp" />
+</android.support.constraint.ConstraintLayout>

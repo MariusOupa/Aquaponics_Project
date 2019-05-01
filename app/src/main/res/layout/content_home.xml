@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <TextView
+        android:id="@+id/lblFishTank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="164dp"
+        tools:text="Fish Tank Temp" />
+
+    <TextView
+        android:id="@+id/lblSoilTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="164dp"
+        tools:text="Soil Temp" />
+
+    <TextView
+        android:id="@+id/lblCurrentTemp"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="279dp"
+        tools:text="TEMP" />
+
+    <TextView
+        android:id="@+id/lblSoilTemp2"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:text="TEMP" />
+
+    <TextView
+        android:id="@+id/lblFishTank2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="340dp"
+        tools:text="Weather Temp" />
+
+    <TextView
+        android:id="@+id/lblFishTemp"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:text="TEMP" />
+
+    <TextView
+        android:id="@+id/lblFishTank3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green House Temp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/lblCurrentTemp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="Current Tempreture's" />
+
+    <TextView
+        android:id="@+id/lblGreenHouseTemp"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="279dp"
+        tools:text="TEMP" />
+</android.support.constraint.ConstraintLayout>
