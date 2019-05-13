@@ -8,60 +8,84 @@
 
     <EditText
         android:id="@+id/edtPassword"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtDoB"
+        app:layout_constraintEnd_toEndOf="@+id/edtDoB"
+        app:layout_constraintStart_toStartOf="@+id/edtDoB"
+        app:layout_constraintTop_toBottomOf="@+id/edtFirstname" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="222dp"
         android:onClick="onBackClick"
         android:text="Back"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="459dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSignUp2"
+        app:layout_constraintTop_toBottomOf="@+id/edtLocation" />
 
     <EditText
         android:id="@+id/edtLocation"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="Location"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="381dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="@+id/btnSignUp2"
+        app:layout_constraintTop_toBottomOf="@+id/edtDoB" />
 
     <EditText
         android:id="@+id/edtDoB"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="31dp"
         android:ems="10"
         android:hint="Date Of Birth"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="300dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtLocation"
+        app:layout_constraintEnd_toEndOf="@+id/edtLocation"
+        app:layout_constraintStart_toStartOf="@+id/edtLocation"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <EditText
         android:id="@+id/edtFirstname"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="Firstname"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintBottom_toTopOf="@+id/edtPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtPassword"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSignUp2"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
         android:onClick="onSignUpClick"
         android:text="Sign Up"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="459dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toStartOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
 
 </android.support.constraint.ConstraintLayout>

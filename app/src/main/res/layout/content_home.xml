@@ -12,85 +12,108 @@
         android:id="@+id/lblFishTank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="164dp"
+        app:layout_constraintStart_toStartOf="@+id/lblFishTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblFishTemp"
         tools:text="Fish Tank Temp" />
 
     <TextView
         android:id="@+id/lblSoilTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="164dp"
+        app:layout_constraintStart_toStartOf="@+id/lblSoilTemp2"
+        app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2"
         tools:text="Soil Temp" />
 
     <TextView
         android:id="@+id/lblCurrentTemp"
-        android:layout_width="89dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="13dp"
         android:text="TextView"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="279dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblFishTank2"
+        app:layout_constraintEnd_toEndOf="@+id/lblSoilTemp2"
+        app:layout_constraintStart_toStartOf="@+id/lblFishTank2"
         tools:text="TEMP" />
 
     <TextView
         android:id="@+id/lblSoilTemp2"
-        android:layout_width="89dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
         android:text="TextView"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblFishTemp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="TEMP" />
 
     <TextView
         android:id="@+id/lblFishTank2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblFishTank3"
         tools:text="Weather Temp" />
 
     <TextView
         android:id="@+id/lblFishTemp"
-        android:layout_width="89dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
         android:text="TextView"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="104dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSoilTemp2"
+        app:layout_constraintEnd_toStartOf="@+id/lblSoilTemp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblSoilTemp2"
         tools:text="TEMP" />
 
     <TextView
         android:id="@+id/lblFishTank3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="316dp"
         android:text="Green House Temp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="340dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/lblCurrentTemp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Current Tempreture's" />
 
     <TextView
         android:id="@+id/lblGreenHouseTemp"
-        android:layout_width="89dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="TextView"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="279dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblCurrentTemp"
+        app:layout_constraintEnd_toEndOf="@+id/lblFishTemp"
+        app:layout_constraintStart_toStartOf="@+id/lblFishTank3"
+        app:layout_constraintTop_toTopOf="@+id/lblCurrentTemp"
         tools:text="TEMP" />
 </android.support.constraint.ConstraintLayout>

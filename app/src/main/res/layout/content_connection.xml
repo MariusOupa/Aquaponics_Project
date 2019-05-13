@@ -12,68 +12,95 @@
         android:id="@+id/textView3"
         android:layout_width="47dp"
         android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
         android:contentDescription="Connect to Wi-Fi networks"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="79dp"
+        app:layout_constraintBottom_toTopOf="@+id/lblHotspot"
+        app:layout_constraintEnd_toEndOf="@+id/lblBluetooth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Wi-Fi" />
 
     <TextView
         android:id="@+id/lblBluetooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="135dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="135dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Bluetooth" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="On"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="185dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch3" />
 
     <Switch
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="79dp"
         android:text="On"
-        tools:layout_editor_absoluteX="337dp"
-        tools:layout_editor_absoluteY="79dp" />
+        app:layout_constraintBottom_toTopOf="@+id/lblHotspot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblConnections"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="Connections" />
 
     <Switch
         android:id="@+id/switch3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="On"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="135dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
     <TextView
         android:id="@+id/lblHotspot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="26dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="185dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBluetooth"
         tools:text="Mobile Hotspot" />
 </android.support.constraint.ConstraintLayout>

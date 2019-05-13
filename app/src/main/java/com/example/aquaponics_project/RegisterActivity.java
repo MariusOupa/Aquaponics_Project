@@ -14,5 +14,5 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void onSignUpClick(View v){}
 
-    public void onBackClick(){}
+    public void onBackClick(View v){}
 }

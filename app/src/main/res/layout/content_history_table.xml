@@ -10,17 +10,30 @@
 
     <Spinner
         android:id="@+id/lblHistoryDropdown3"
-        android:layout_width="107dp"
-        android:layout_height="27dp"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="67dp" />
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblHistoryDropdown4"
+        app:layout_constraintStart_toEndOf="@+id/lblDate2"
+        app:layout_constraintTop_toBottomOf="@+id/lblHistory" />
 
     <TableLayout
-        android:layout_width="395dp"
-        android:layout_height="565dp"
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="567dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
         android:background="@android:color/darker_gray"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="102dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHistoryDropdown4"
+        app:layout_constraintVertical_bias="0.888">
 
         <TableRow
             android:layout_width="match_parent"
@@ -41,28 +54,40 @@
 
     <TextView
         android:id="@+id/lblDate2"
-        android:layout_width="122dp"
-        android:layout_height="27dp"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="TextView"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="67dp"
+        app:layout_constraintEnd_toStartOf="@+id/lblHistoryDropdown3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblHistory"
         tools:text="Date Selected" />
 
     <TextView
         android:id="@+id/lblHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="20dp"
         android:text="History Table"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/lblDate2"
+        app:layout_constraintEnd_toEndOf="@+id/lblHistoryDropdown3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/lblHistoryDropdown4"
-        android:layout_width="107dp"
-        android:layout_height="27dp"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="67dp" />
+        android:layout_width="115dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblHistoryDropdown3"
+        tools:layout_editor_absoluteY="51dp" />
 </android.support.constraint.ConstraintLayout>
