@@ -116,4 +116,35 @@
         app:layout_constraintStart_toStartOf="@+id/lblFishTank3"
         app:layout_constraintTop_toTopOf="@+id/lblCurrentTemp"
         tools:text="TEMP" />
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 1"
+            android:onClick="onUnit1"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 2"
+            android:onClick="onUnit2"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 3"
+            android:onClick="onUnit3"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 4"
+            android:onClick="onUnit4"/>
+    </android.support.design.widget.TabLayout>
+
 </android.support.constraint.ConstraintLayout>

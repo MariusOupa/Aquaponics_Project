@@ -73,17 +73,15 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_Home) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Connections) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_History) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_Sign_Out) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_Weather) {
 
         }
 
@@ -91,4 +89,9 @@ public class HomeActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void onUnit1(View v){}
+    public void onUnit2(View v){}
+    public void onUnit3(View v){}
+    public void onUnit4(View v){}
 }
