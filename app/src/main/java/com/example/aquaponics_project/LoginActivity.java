@@ -14,7 +14,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onSignInClick(View v){
-
+        Intent iLogin = new Intent(this,HomeActivity.class);
+        startActivity(iLogin);
     }
     public void onSignUpClick(View v){
         Intent iRegister = new Intent(this,RegisterActivity.class);
