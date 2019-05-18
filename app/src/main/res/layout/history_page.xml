@@ -3,10 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".HistoryPageActivity"
-    tools:showIn="@layout/app_bar_history_page">
+    android:layout_height="match_parent">
+
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -14,29 +12,27 @@
         android:layout_height="249dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="299dp"
         android:background="@android:color/darker_gray"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTodayGraph"></LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <TextView
         android:id="@+id/lblTodayGraph"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
+        android:layout_height="19dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginRight="164dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textColor="@android:color/black"
-        app:layout_constraintEnd_toStartOf="@+id/btnTable"
+        app:layout_constraintBottom_toTopOf="@+id/btnGraph"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="12dp"
         tools:text="Today's Graph" />
 
     <TableLayout
@@ -51,8 +47,10 @@
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblTodayTable">
+        app:layout_constraintTop_toBottomOf="@+id/lblTodayTable"
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="match_parent"
@@ -73,21 +71,23 @@
 
     <Button
         android:id="@+id/btnTable"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="Table"
         app:layout_constraintBottom_toBottomOf="@+id/btnGraph"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/lblTodayGraph"
-        app:layout_constraintTop_toTopOf="@+id/btnGraph" />
+        app:layout_constraintTop_toTopOf="@+id/btnGraph"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -100,20 +100,20 @@
         android:id="@+id/btnGraph"
         android:layout_width="140dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="12dp"
         android:text="Graph"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/lblTodayTable"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/tableLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteY="386dp"
         tools:text="Today's Table" />
 </android.support.constraint.ConstraintLayout>
