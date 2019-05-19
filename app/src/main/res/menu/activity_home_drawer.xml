@@ -7,19 +7,23 @@
         <item
             android:id="@+id/nav_Home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Home" />
+            android:title="Home"
+            />
         <item
             android:id="@+id/nav_History"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="History" />
+            android:title="History"
+            />
         <item
             android:id="@+id/nav_Connections"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Connections" />
+            android:title="Connections"
+            />
         <item
             android:id="@+id/nav_Weather"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Weather" />
+            android:title="Weather"
+            />
     </group>
 
     <item android:title="Sign Out Options">
