@@ -25,7 +25,8 @@ public class HomeActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        NavigationView navigationView =  findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -33,9 +34,12 @@ public class HomeActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Home()).commit();
+            navigationView.setCheckedItem(R.id.nav_Home);
+        }
 
-        NavigationView navigationView =  findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -72,32 +76,35 @@ public class HomeActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
+
+
     public boolean onNavigationItemSelected( MenuItem item) {
         // Handle navigation view item clicks here.
-
-       int id = item.getItemId();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        if (id == R.id.nav_Home) {
-            Intent iHome = new Intent(this,HomeActivity.class);
-            startActivity(iHome);
-        } else if (id == R.id.nav_Connections) {
-            Intent iConnection = new Intent(this,Connections.class);
-            startActivity(iConnection);
-        } else if (id == R.id.nav_History) {
-            Intent iHistory = new Intent(this,HistoryPage.class);
-            startActivity(iHistory);
-        } else if (id == R.id.nav_Sign_Out) {
-            Intent iLogin = new Intent(this,LoginActivity.class);
-            startActivity(iLogin);
-        } else if (id == R.id.nav_Weather) {
-            Intent iWeather = new Intent(this,Weather.class);
-            startActivity(iWeather);
+        int id = item.getItemId();
+        switch (id){
+            case R.id.nav_Home:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
+                break;
+            case R.id.nav_Connections:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Connections()).commit();
+                break;
+            case R.id.nav_Weather:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Weather()).commit();
+                break;
+            case R.id.nav_History:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HistoryPage()).commit();
+                break;
+            case R.id.nav_Sign_Out:
+                Intent isignOut = new Intent(this,LoginActivity.class);
+                startActivity(isignOut);
+                break;
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 
     public void onUnit1(View v){}
     public void onUnit2(View v){}

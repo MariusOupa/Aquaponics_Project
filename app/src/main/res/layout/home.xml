@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblFishTank"
+        tools:text="Fish Tank Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="12dp"
+        android:text="Fish Tank Temp"
+        app:layout_constraintStart_toStartOf="@+id/lblFishTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblFishTemp" />
+
+    <TextView
+        android:id="@+id/lblSoilTemp"
+        tools:text="Soil Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Soil Temp"
+        app:layout_constraintStart_toStartOf="@+id/lblSoilTemp2"
+        app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2" />
+
+    <TextView
+        android:id="@+id/lblCurrentTemp"
+        tools:text="TEMP"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblSoilTemp2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblGreenHouseTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2" />
+
+    <TextView
+        android:id="@+id/lblSoilTemp2"
+        tools:text="TEMP"
+        android:layout_width="109dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toEndOf="@+id/lblFishTemp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblFishTank2"
+        tools:text="Weather Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="Weather Temp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lblCurrentTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblCurrentTemp" />
+
+    <TextView
+        android:id="@+id/lblFishTemp"
+        tools:text="TEMP"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSoilTemp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblSoilTemp2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/lblFishTank3"
+        tools:text="Green House Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:text="Green House Temp"
+        app:layout_constraintStart_toStartOf="@+id/lblGreenHouseTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblGreenHouseTemp" />
+
+    <TextView
+        android:id="@+id/lblCurrentTemp2"
+        tools:text="Current Tempreture's"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="108dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblGreenHouseTemp"
+        tools:text="TEMP"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblCurrentTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblCurrentTemp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUnit1"
+            android:text="Unit 1" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUnit2"
+            android:text="Unit 2" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUnit3"
+            android:text="Unit 3" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUnit4"
+            android:text="Unit 4" />
+    </android.support.design.widget.TabLayout>
+
+</android.support.constraint.ConstraintLayout>
