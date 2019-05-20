@@ -14,6 +14,7 @@ public class Weather extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        System.out.println("In Weather");
         return inflater.inflate(R.layout.weather,container,false);
     }
 }

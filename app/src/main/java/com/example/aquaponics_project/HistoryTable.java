@@ -13,6 +13,7 @@ public class HistoryTable extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("In History Table");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history_table);
     }

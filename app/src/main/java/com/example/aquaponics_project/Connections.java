@@ -14,6 +14,7 @@ public class Connections extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        System.out.println("In Connections");
         return inflater.inflate(R.layout.connections,container,false);
     }
 }

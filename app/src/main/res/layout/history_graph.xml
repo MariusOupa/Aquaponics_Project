@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/history_graph_page">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -54,28 +55,32 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="80dp" />
 
-    <LinearLayout
-        android:id="@+id/layoutHistoryGraph"
-        android:layout_width="397dp"
-        android:layout_height="600dp"
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartGraph"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/darker_gray"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblHistoryDropdown"
-        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/lblHistoryDropdown2"
         android:layout_width="115dp"
         android:layout_height="30dp"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="80dp" />
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        app:layout_constraintStart_toEndOf="@+id/lblDate"
+        app:layout_constraintBottom_toBottomOf="@+id/lineChartGraph"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="80dp"/>
 </android.support.constraint.ConstraintLayout>

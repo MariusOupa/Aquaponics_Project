@@ -16,16 +16,20 @@ import android.widget.Button;
 
 
 public class HistoryPage extends Fragment {
+
+    private View view;
+
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.history_page,container,false);
-     Button button = (Button) view.findViewById(R.id.btnGraph);
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable final Bundle savedInstanceState) {
+        System.out.println("In History Page");
+        view = inflater.inflate(R.layout.history_page,container,false);
+        Button button = (Button) view.findViewById(R.id.btnGraph);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction fm = getFragmentManager().beginTransaction();
-                fm.replace(R.id.page_history,new HistoryGraph()).commit();
+                fm.replace(R.id.page_history, new HistoryGraph()).commit();
             }
         });
         return view;
