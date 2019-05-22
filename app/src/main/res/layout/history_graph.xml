@@ -20,9 +20,10 @@
         android:id="@+id/lblHistoryGraph"
         android:layout_width="159dp"
         android:layout_height="31dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="19dp"
-        android:text="Histroy Graph"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="History Graph"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/lblDate"
@@ -51,9 +52,9 @@
         android:layout_marginLeft="16dp"
         android:text="Select Date"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintStart_toEndOf="@+id/lblTodayGraph"
+        app:layout_constraintTop_toBottomOf="@+id/lblTodayGraph"
+        tools:ignore="MissingConstraints" />
 
 
     <com.github.mikephil.charting.charts.LineChart
@@ -66,7 +67,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/background_light"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

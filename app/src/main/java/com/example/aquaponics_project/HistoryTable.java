@@ -9,12 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class HistoryTable extends AppCompatActivity {
+public class HistoryTable extends Fragment {
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         System.out.println("In History Table");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.history_table);
+
+        return inflater.inflate(R.layout.history_table, container, false);
     }
 }

@@ -15,9 +15,8 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="TextView"
+        android:text="History Table"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/lblHistoryDropdown3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Date Selected" />
@@ -33,8 +32,6 @@
         android:text="History Table"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/lblDate2"
-        app:layout_constraintEnd_toEndOf="@+id/lblHistoryDropdown3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,7 +44,6 @@
         android:layout_marginRight="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toEndOf="@+id/lblHistoryDropdown3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
@@ -69,11 +65,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="4dp"
-        android:background="@android:color/darker_gray"
+        android:background="@android:color/holo_orange_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblHistoryDropdown4"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.888">
 
         <TableRow

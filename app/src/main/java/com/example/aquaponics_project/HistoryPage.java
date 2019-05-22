@@ -25,6 +25,7 @@ public class HistoryPage extends Fragment {
         System.out.println("In History Page");
         view = inflater.inflate(R.layout.history_page,container,false);
         Button button = (Button) view.findViewById(R.id.btnGraph);
+        Button button1 = (Button) view.findViewById(R.id.btnTable);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,9 +33,16 @@ public class HistoryPage extends Fragment {
                 fm.replace(R.id.page_history, new HistoryGraph()).commit();
             }
         });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.page_history, new HistoryTable()).commit();
+            }
+        });
         return view;
     }
-
 }
 
 

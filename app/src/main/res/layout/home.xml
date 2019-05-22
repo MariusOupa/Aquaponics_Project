@@ -8,38 +8,52 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/lblCurrentTemp2"
+        tools:text="Live Data"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="Live Data"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/lblFishTank"
         tools:text="Fish Tank Temp"
         android:layout_width="wrap_content"
         android:layout_height="21dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:text="Fish Tank Temp"
         app:layout_constraintStart_toStartOf="@+id/lblFishTemp"
         app:layout_constraintTop_toBottomOf="@+id/lblFishTemp" />
+
+    <TextView
+        android:id="@+id/lblFishTemp"
+        tools:text="TEMP"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:text="21 ºC"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSoilTemp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblSoilTemp2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/lblSoilTemp"
         tools:text="Soil Temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:text="Soil Temp"
         app:layout_constraintStart_toStartOf="@+id/lblSoilTemp2"
-        app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2" />
-
-    <TextView
-        android:id="@+id/lblCurrentTemp"
-        tools:text="TEMP"
-        android:layout_width="112dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="84dp"
-        android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="@+id/lblSoilTemp2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/lblGreenHouseTemp"
         app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2" />
 
     <TextView
@@ -50,12 +64,27 @@
         android:layout_marginTop="140dp"
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
-        android:text="TextView"
-        android:textSize="30sp"
+        android:text="25 ºC"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.925"
         app:layout_constraintStart_toEndOf="@+id/lblFishTemp"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCurrentTemp"
+        tools:text="TEMP"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="84dp"
+        android:text="20 ºC"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblSoilTemp2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lblGreenHouseTemp"
+        app:layout_constraintTop_toBottomOf="@+id/lblSoilTemp2" />
 
     <TextView
         android:id="@+id/lblFishTank2"
@@ -64,7 +93,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="92dp"
         android:layout_marginRight="92dp"
         android:text="Weather Temp"
@@ -74,42 +103,14 @@
         app:layout_constraintTop_toBottomOf="@+id/lblCurrentTemp" />
 
     <TextView
-        android:id="@+id/lblFishTemp"
-        tools:text="TEMP"
-        android:layout_width="107dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/lblSoilTemp2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lblSoilTemp2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/lblFishTank3"
         tools:text="Green House Temp"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="5dp"
         android:text="Green House Temp"
         app:layout_constraintStart_toStartOf="@+id/lblGreenHouseTemp"
         app:layout_constraintTop_toBottomOf="@+id/lblGreenHouseTemp" />
-
-    <TextView
-        android:id="@+id/lblCurrentTemp2"
-        tools:text="Current Tempreture's"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="108dp"
-        android:text="TextView"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/lblGreenHouseTemp"
@@ -118,8 +119,8 @@
         android:layout_height="43dp"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:text="TextView"
-        android:textSize="30sp"
+        android:text="35 ºC"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/lblCurrentTemp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/lblCurrentTemp"
@@ -139,25 +140,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onUnit1"
-            android:text="Unit 1" />
+            android:text="System 1" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onUnit2"
-            android:text="Unit 2" />
+            android:text="System 2" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onUnit3"
-            android:text="Unit 3" />
+            android:text="System 3" />
 
         <android.support.design.widget.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onUnit4"
-            android:text="Unit 4" />
+            android:text="System 4" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUnit5"
+            android:text="System 5" />
     </android.support.design.widget.TabLayout>
 
 </android.support.constraint.ConstraintLayout>
